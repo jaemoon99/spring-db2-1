@@ -97,7 +97,7 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
         }
         log.info("sql={}", sql);
 
-        return template.query(sql, itemRowMapper(), param.toArray());
+        return template.query(sql, itemRowMapper(), param.toArray()); //결과가 하나 이상일 때 사용
     }
 
     private RowMapper<Item> itemRowMapper() {
