@@ -104,7 +104,7 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
         return ((rs, rowNum) -> {
             Item item = new Item();
             item.setId(rs.getLong("id"));
-            item.setItemName(rs.getString("user_name"));
+            item.setItemName(rs.getString("item_name"));
             item.setPrice(rs.getInt("price"));
             item.setQuantity(rs.getInt("quantity"));
             return item;
