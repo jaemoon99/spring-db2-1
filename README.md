@@ -4,4 +4,4 @@
 
 - https://www.inflearn.com/course/스프링-db-2
 
-[Section Range](section 1 ~ section 5)
+[Section Range](section 1 ~ section 8)
